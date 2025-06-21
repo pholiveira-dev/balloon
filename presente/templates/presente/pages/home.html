@@ -1,0 +1,33 @@
+{% extends "global/base.html" %}
+
+{% block conteudo_pagina %}
+    {% comment %} <section class="container-header">
+        {% include "presente/partials/header.html" %}
+    </section> {% endcomment %}
+<!-- Banner -->
+    <section class="banner">
+        {% include "presente/partials/banner.html" %}
+    </section>
+
+    <!-- Categorias -->
+    <section class="categorias" id="categorias">
+        {% include "presente/partials/categorias.html" %}
+    </section>
+
+    <section>
+    <h3>Produtos em Destaque</h3>
+    <div class="container-produtos">
+        {% for produto in produtos %}
+            <a href="{% url 'presente:detalhe_produto' produto.id %}">
+            {% include "presente/partials/produtos.html" with produto=produto %}
+        {% endfor %}
+    </div>
+    </section>
+
+
+    <!-- Depoimentos -->
+    <section class="depoimentos">
+        {% include "presente/partials/depoimentos.html" %}
+    </section>
+
+{% endblock conteudo_pagina %}

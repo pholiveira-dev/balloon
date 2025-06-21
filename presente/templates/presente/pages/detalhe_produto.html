@@ -1,0 +1,24 @@
+{% extends "global/base.html" %}
+{% load static %}
+
+{% block conteudo_pagina %}
+
+<section class="detalhe-produto">
+  <div class="card-produto-detalhe">
+
+    <div class="imagem-produto">
+      <img src="{{ produto.imagem.url }}" alt="{{ produto.nome }}">
+    </div>
+
+    <div class="info-produto">
+      <h1>{{ produto.nome }}</h1>
+      <p class="descricao">{{ produto.descricao }}</p>
+      <p class="preco">R$ {{ produto.preco }}</p>
+      <a href="{% url 'presente:home' %}" class="botao-voltar">← Voltar para Home</a>
+    </div>
+
+  </div>
+</section>
+
+
+{% endblock conteudo_pagina %}

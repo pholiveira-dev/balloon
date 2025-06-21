@@ -1,0 +1,15 @@
+{% extends "global/base.html" %}
+{% load static %}
+
+{% block conteudo_pagina %}
+
+<section>
+    <div class="card-produto">
+        <img src="{{ produto.imagem.url }}" alt="produto.nome">
+        <h4>{{ produto.nome }}</h4>
+        <p>{{ produto.preco }}</p>
+        <button class="botao">Ver mais</button>
+    </div>
+</section>
+{% endblock conteudo_pagina %}
+

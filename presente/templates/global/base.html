@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    {% include "presente/partials/head.html" %}
+</head>
+
+<body>
+
+    <header class="container-header">
+        {% include "presente/partials/header.html" %}
+    </header>
+
+    <main>
+        {% block conteudo_pagina %}
+        {% endblock conteudo_pagina %}
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        {% include "presente/partials/footer.html" %}
+    </footer>
+
+</body>
+</html>

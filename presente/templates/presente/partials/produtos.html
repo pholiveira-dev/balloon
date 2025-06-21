@@ -1,0 +1,9 @@
+{% load static %}
+<section>
+    <div class="card-produto">
+        <img src="{{ produto.imagem.url }}" alt="produto.nome">
+        <h4>{{ produto.nome }}</h4>
+        <p>R$ {{ produto.preco }}</p>
+        <button class="botao">Ver mais</button>
+    </div>
+</section>

@@ -1,0 +1,17 @@
+{% extends "global/base.html" %}
+
+{% block conteudo_pagina %}
+<h2>Categoria: {{ categoria.nome }}</h2>
+
+  <div class="container-produtos">
+    {% for produto in produtos %}
+      <div class="card-produto">
+        <img src="{{ produto.imagem.url }}" width="200">
+        <h3>{{ produto.nome }}</h3>
+        <p>{{ produto.descricao }}</p>
+        <p>R$ {{ produto.preco }}</p>
+        <a href="{% url 'presente:detalhe_produto' produto.id %}">Ver detalhes</a>
+    {% endfor %}
+      </div>
+  </div>
+{% endblock conteudo_pagina %}

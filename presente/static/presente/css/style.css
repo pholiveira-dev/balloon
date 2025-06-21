@@ -1,0 +1,282 @@
+:root {
+  --cor-primaria: #4D96FF;
+  --cor-secundaria: #6BCB77;
+  --cor-terciaria: #FFD93D;
+  --cor-fundo: #FAFAFA;
+  --cor-texto: #333;
+  --cor-contraste: #FF6B6B;
+
+  --fonte-titulo: 'Baloo 2', cursive;
+  --fonte-texto: 'Poppins', sans-serif;
+
+  --borda: 12px;
+  --sombra: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+body {
+  margin: 0;
+  font-family: var(--fonte-texto);
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: white;
+  box-shadow: var(--sombra);
+}
+
+.title-balloon {
+  font-family: var(--fonte-titulo);
+  color: var(--cor-contraste);
+  font-size: 32px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: var(--cor-texto);
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: var(--cor-primaria);
+}
+
+/* Banner */
+.banner {
+  background-color: var(--cor-contraste);
+  color: white;
+  text-align: center;
+  padding: 64px 16px;
+}
+
+.banner h2 {
+  font-family: var(--fonte-titulo);
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.banner p {
+  margin-bottom: 24px;
+}
+
+.banner button {
+  background-color: white;
+  color: var(--cor-primaria);
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--borda);
+  cursor: pointer;
+}
+
+.banner button:hover {
+  background-color: #e6e6e6;
+}
+
+/* Categorias */
+.categorias {
+  padding: 40px 16px;
+  text-align: center;
+}
+
+.container-categorias {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card-categoria {
+  background-color: white;
+  padding: 20px 40px;
+  border-radius: var(--borda);
+  box-shadow: var(--sombra);
+  cursor: pointer;
+  transition: transform 0.3s;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.card-categoria:hover {
+  transform: translateY(-5px);
+}
+
+/* Produtos em Destaque e Todos */
+.container-produtos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.card-produto {
+  width: 250px;
+  border-radius: var(--borda);
+  box-shadow: var(--sombra);
+  background-color: #fff;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-align: center;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-produto:hover {
+  transform: scale(1.03);
+}
+
+.card-produto img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.card-produto h4 {
+  font-size: 1.1rem;
+  margin: 1rem 0 0.5rem;
+  color: #333;
+}
+
+.card-produto p {
+  margin: 0.2rem 0;
+  color: #d9534f;
+  font-weight: bold;
+}
+
+.botao {
+  padding: 0.5rem 1.2rem;
+  background-color: var(--cor-secundaria);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.botao:hover {
+  background-color: #57a862;
+  transform: scale(1.05);
+}
+
+.botao:active {
+  background-color: #44904c;
+  transform: scale(0.97);
+}
+
+/* Detalhe do Produto */
+.detalhe-produto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: var(--cor-fundo);
+}
+
+.card-produto-detalhe {
+  background-color: white;
+  border-radius: var(--borda);
+  box-shadow: var(--sombra);
+  padding: 24px;
+  max-width: 1000px;
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagem-produto {
+  flex: 1;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagem-produto img {
+  width: 100%;
+  border-radius: var(--borda);
+  object-fit: cover;
+}
+
+.info-produto {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.info-produto h1 {
+  font-family: var(--fonte-titulo);
+  margin-bottom: 16px;
+  font-size: 1.8rem;
+}
+
+.info-produto .descricao {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.info-produto .preco {
+  font-size: 1.5rem;
+  color: var(--cor-contraste);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.botao-voltar {
+  display: inline-block;
+  background-color: var(--cor-secundaria);
+  color: white;
+  padding: 10px 20px;
+  border-radius: var(--borda);
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.botao-voltar:hover {
+  background-color: #57a862;
+}
+
+/* Footer */
+footer {
+  background-color: white;
+  padding: 16px;
+  text-align: center;
+  box-shadow: var(--sombra);
+}
+
+footer .redes a {
+  margin: 0 8px;
+  color: var(--cor-primaria);
+}
+
+footer .redes a:hover {
+  text-decoration: underline;
+}
+
+/* vou mandar foto de tudo o que acabou desconfigurando. em resumo: na página inicial produtos em destaque não está centralizado, o card dos produtos em destaque fica um maior e outro menor e o botão de ver mais está totalmente fora do padrão. A parte de depoimentos desconfigurou completamente.
+Em categorias o título ficou desalinhado novamente, a descrição dos produtos está com a mesma cor que o valor do produto (deixando visualmente ruim).
+Ao clicar no produto a descrição também está exatamente igual ao valor do produto*/
