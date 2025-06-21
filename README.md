@@ -1,3 +1,5 @@
+> Este projeto foi desenvolvido com Django, utilizando recursos de modelos relacionados, views dinâmicas e templates para criar um **site de catálogo de produtos com painel administrativo personalizado**.
+
 # Loja Balloone 🎈
 
 Projeto real desenvolvido para atender a uma necessidade de uma pequena empreendedora, com o objetivo de melhorar o atendimento ao cliente e centralizar as informações da loja em um só lugar.
