@@ -34,7 +34,7 @@ Criação de um site simples, objetivo e funcional para:
 
 **Página Home**
 
-![print](presente/static/presente/img/image.png)
+![print](presente/static/presente/img/home.jpg)
 
 **Produtos em Destaque**
 
