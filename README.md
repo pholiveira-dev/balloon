@@ -17,6 +17,17 @@ Criação de um site simples, objetivo e funcional para:
 - Incluir formulários para contato
 - Reduzir o número de mensagens repetitivas via WhatsApp/Instagram
 
+## 🔧 Funcionalidades
+
+- CRUD completo de produtos
+  - O cliente pode cadastrar, editar e remover produtos diretamente do painel
+- CRUD de categorias
+  - Os produtos são organizados por categorias criadas pelo próprio cliente
+- Listagem de produtos separada por categoria na Home
+- Página de detalhes para cada produto
+- Estrutura pensada para expansão futura:
+  - Planejamento de módulo para **receber e gerenciar pedidos**
+
 ## 🧠 Tecnologias Utilizadas
 
 - **Django** (Python) — back-end
