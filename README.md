@@ -32,17 +32,11 @@ Criação de um site simples, objetivo e funcional para:
 
 ## 📸 Demonstração
 
-**Página Home**
-
-![print](presente/static/presente/img/home.jpg)
-
-**Produtos em Destaque**
+![print](presente/static/presente/img/home.png)
 
 ![print](presente/static/presente/img/produtos_destaque.jpg)
 
-**Depoimentos**
-
-![print](presente/static/presente/img/depoimentos.jpg)
+![print](presente/static/presente/img/depoimentos.png)
 
 ## 📌 Status do Projeto
 
