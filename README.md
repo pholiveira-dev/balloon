@@ -51,11 +51,11 @@ Criação de um site simples, objetivo e funcional para:
 
 ## 📌 Status do Projeto
 
-🟡 Em desenvolvimento
-🟡 Página inicial (em desenvolvimento)
-🟡 Exibição de produtos (em desenvolvimento)
-🔜 Integração com API de pagamento
-🔜 Área administrativa restrita
+🟡 Em desenvolvimento  
+🟡 Página inicial (em desenvolvimento)  
+🟡 Exibição de produtos (em desenvolvimento)  
+🔜 Integração com API de pagamento  
+🔜 Área administrativa restrita  
 
 ## 📁 Como rodar localmente
 
