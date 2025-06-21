@@ -32,8 +32,7 @@ Criação de um site simples, objetivo e funcional para:
 
 ## 📸 Demonstração
 
-![Demonstração do site](![image](https://github.com/user-attachments/assets/7b828e0e-e082-4325-9471-e72d5d10d750)
-)
+![Demonstração do site](![image]presente/static/presente/img/image.png)
 
 ## 📌 Status do Projeto
 
