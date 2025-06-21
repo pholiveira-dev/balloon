@@ -30,12 +30,10 @@ Criação de um site simples, objetivo e funcional para:
 - Estruturação de rotas, views e templates
 - Organização de projeto para resolver um problema real de negócio
 
-## 📸 Demonstração
+## 📸 Demonstração página Home
 
 ![print](presente/static/presente/img/home.png)
-
 ![print](presente/static/presente/img/produtos_destaque.jpg)
-
 ![print](presente/static/presente/img/depoimentos.png)
 
 ## 📌 Status do Projeto
