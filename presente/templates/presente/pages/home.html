@@ -14,14 +14,12 @@
         {% include "presente/partials/categorias.html" %}
     </section>
 
-    <section>
-    <h3>Produtos em Destaque</h3>
-    <div class="container-produtos">
-        {% for produto in produtos %}
-            <a href="{% url 'presente:detalhe_produto' produto.id %}">
-            {% include "presente/partials/produtos.html" with produto=produto %}
-        {% endfor %}
-    </div>
+    <!-- Produtos em Destaque -->
+    <section class="produtos-destaque">
+        <h2 class="titulo-produtos-destaque">Produtos em Destaque</h2>
+            <div class="container-produtos">
+                {% include "presente/partials/produtos.html" %}
+            </div>
     </section>
 
 

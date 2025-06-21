@@ -118,17 +118,31 @@ nav ul li a:hover {
   transform: translateY(-5px);
 }
 
-/* Produtos em Destaque e Todos */
+/* Produtos em Destaque */
+.produtos-destaque {
+  padding: 3rem 1rem;
+}
+
+.titulo-produtos-destaque,
+h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  color: #333;
+}
+
 .container-produtos {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
 }
 
 .card-produto {
-  width: 250px;
+  width: 260px;
+  min-height: 420px; /* altura mínima para manter padronizado */
   border-radius: var(--borda);
   box-shadow: var(--sombra);
   background-color: #fff;
@@ -164,8 +178,11 @@ nav ul li a:hover {
   font-weight: bold;
 }
 
-.botao {
-  padding: 0.5rem 1.2rem;
+/* Botão "Ver mais" */
+.card-produto .botao {
+  margin: 0 auto;
+  margin-top: 0.8rem;
+  padding: 0.6rem 1.5rem;
   background-color: var(--cor-secundaria);
   color: white;
   border: none;
@@ -175,14 +192,30 @@ nav ul li a:hover {
   transition: background-color 0.3s, transform 0.2s;
 }
 
-.botao:hover {
+.card-produto .botao:hover {
   background-color: #57a862;
   transform: scale(1.05);
 }
 
-.botao:active {
+.card-produto .botao:active {
   background-color: #44904c;
   transform: scale(0.97);
+}
+
+.link-produto {
+  margin-top: 0.8rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--cor-secundaria);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+
+.link-produto:hover {
+  background-color: #57a862;
 }
 
 /* Detalhe do Produto */
@@ -236,6 +269,7 @@ nav ul li a:hover {
 .info-produto .descricao {
   margin-bottom: 20px;
   line-height: 1.6;
+  color: var(--cor-texto); /* Corrigido: texto da descrição agora escuro */
 }
 
 .info-produto .preco {
@@ -260,6 +294,56 @@ nav ul li a:hover {
   background-color: #57a862;
 }
 
+/* Depoimentos */
+
+.depoimentos {
+    background-color: #fef9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.depoimentos h2 {
+    font-size: 2rem;
+    color: var(--cor-primaria, #4D96FF);
+    margin-bottom: 40px;
+    font-family: 'Lora', serif;
+}
+
+.container-depoimentos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.card-depoimento {
+    background-color: white;
+    padding: 24px;
+    max-width: 300px;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    text-align: left;
+    transition: transform 0.2s ease;
+}
+
+.card-depoimento:hover {
+    transform: scale(1.03);
+}
+
+.card-depoimento .texto {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 12px;
+    font-style: italic;
+}
+
+.card-depoimento .nome {
+    font-weight: bold;
+    color: var(--cor-secundaria, #6BCB77);
+    font-size: 0.95rem;
+}
+
+
 /* Footer */
 footer {
   background-color: white;
@@ -276,7 +360,3 @@ footer .redes a {
 footer .redes a:hover {
   text-decoration: underline;
 }
-
-/* vou mandar foto de tudo o que acabou desconfigurando. em resumo: na página inicial produtos em destaque não está centralizado, o card dos produtos em destaque fica um maior e outro menor e o botão de ver mais está totalmente fora do padrão. A parte de depoimentos desconfigurou completamente.
-Em categorias o título ficou desalinhado novamente, a descrição dos produtos está com a mesma cor que o valor do produto (deixando visualmente ruim).
-Ao clicar no produto a descrição também está exatamente igual ao valor do produto*/

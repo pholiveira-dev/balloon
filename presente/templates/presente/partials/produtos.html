@@ -1,9 +1,10 @@
 {% load static %}
-<section>
+{% for produto in produtos %}
     <div class="card-produto">
-        <img src="{{ produto.imagem.url }}" alt="produto.nome">
+        <img src="{{ produto.imagem.url }}" alt="{{ produto.nome }}">
         <h4>{{ produto.nome }}</h4>
         <p>R$ {{ produto.preco }}</p>
-        <button class="botao">Ver mais</button>
+        <a href="{% url 'presente:detalhe_produto' produto.id %}"><button class="link-produto">Ver mais</button>
+        </a>
     </div>
-</section>
+{% endfor %}

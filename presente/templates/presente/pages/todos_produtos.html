@@ -3,6 +3,7 @@
 
 {% block conteudo_pagina %}
 
+{% for produto in produtos %}
 <section>
     <div class="card-produto">
         <img src="{{ produto.imagem.url }}" alt="produto.nome">
@@ -11,5 +12,6 @@
         <button class="botao">Ver mais</button>
     </div>
 </section>
-{% endblock conteudo_pagina %}
+{% endfor %}
 
+{% endblock conteudo_pagina %}
