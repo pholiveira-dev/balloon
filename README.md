@@ -32,7 +32,7 @@ Criação de um site simples, objetivo e funcional para:
 
 ## 📸 Demonstração
 
-(![print](presente/static/presente/img/image.png)
+![print](presente/static/presente/img/image.png)
 
 ## 📌 Status do Projeto
 
