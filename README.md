@@ -1,3 +1,5 @@
+> Este projeto foi desenvolvido com Django, utilizando recursos de modelos relacionados, views dinâmicas e templates para criar um **site de catálogo de produtos com painel administrativo personalizado**.
+
 # Loja Balloone 🎈
 
 Projeto real desenvolvido para atender a uma necessidade de uma pequena empreendedora, com o objetivo de melhorar o atendimento ao cliente e centralizar as informações da loja em um só lugar.
@@ -16,6 +18,17 @@ Criação de um site simples, objetivo e funcional para:
 - Explicar as regras de funcionamento da loja (formas de pedido, entrega, etc.)
 - Incluir formulários para contato
 - Reduzir o número de mensagens repetitivas via WhatsApp/Instagram
+
+## 🔧 Funcionalidades
+
+- CRUD completo de produtos
+  - O cliente pode cadastrar, editar e remover produtos diretamente do painel
+- CRUD de categorias
+  - Os produtos são organizados por categorias criadas pelo próprio cliente
+- Listagem de produtos separada por categoria na Home
+- Página de detalhes para cada produto
+- Estrutura pensada para expansão futura:
+  - Planejamento de módulo para **receber e gerenciar pedidos**
 
 ## 🧠 Tecnologias Utilizadas
 
@@ -39,10 +52,10 @@ Criação de um site simples, objetivo e funcional para:
 ## 📌 Status do Projeto
 
 🟡 Em desenvolvimento  
-🟡 Página inicial (em desenvolvimento) 
-🟡 Exibição de produtos (em desenvolvimento)
+🟡 Página inicial (em desenvolvimento)  
+🟡 Exibição de produtos (em desenvolvimento)  
 🔜 Integração com API de pagamento  
-🔜 Área administrativa restrita
+🔜 Área administrativa restrita  
 
 ## 📁 Como rodar localmente
 
